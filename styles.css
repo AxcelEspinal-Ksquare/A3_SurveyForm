@@ -1,3 +1,17 @@
 body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+.jumbo {
+    background-color: white;
+    padding: 1.5%;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 5px auto;
+}
+
+article {
+    margin: 15px auto;
 }

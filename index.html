@@ -9,11 +9,47 @@
 </head>
 <body>
     <section class="jumbo">
-        <h3>Axcel's Kitchen Survey</h3>
+        <h2>Axcel's Kitchen Survey</h2>
         <p>Please, help us improving our service by filling out this quick survey.</p>
         <hr>
         <form action="">
-            <label for=""></label>
+            <article>
+                <label for="firstName">First Name</label>
+                <input type="text" name="fName" id="firstName">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lName" id="lastName"> 
+            </article>
+            <article>
+                <label for="email">Your e-mail</label>
+                <input type="email" name="mail" id="email"> 
+            </article>
+            <article>
+                <label for="spend">How much did you spend on your last visit to our restaurant?</label>
+                <input type="number" name="amount" id="spend"> 
+            </article>
+            <article>
+                <label for="people">How many people shared this meal? (Including yourself)</label>
+                <select name="people">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3 or more</option>
+                </select> 
+            </article>
+            <article>
+                <span>What payment method did you use?</span>
+                <input type="radio" id="cash" name="paymentType" value="cash">
+                <label for="cash">Cash</label>
+                <input type="radio" id="Card" name="paymentType" value="Card">
+                <label for="Card">Card</label>
+            </article>
+            <article>
+                <input type="checkbox" id="repeat" name="repeat" value="Y">
+                <label for="repeat"> You'd like to take another survey.</label>
+            </article>            
+            <article>
+                <label for="feedback">Please, leave us a feedback about this survey and your experience in our restaurant.</label> 
+                <textarea name="feedback" id="feedback" cols="60" rows="10"></textarea>
+            </article>
         </form>
     </section>
 
